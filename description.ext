@@ -1,0 +1,67 @@
+//====================================================================================================================//
+//============================ LIBRARIES IMPORT - DO NOT CHANGE ANYTHING WITHIN THIS BOX =============================//
+//====================================================================================================================//
+#include "\a3\ui_f\hpp\defineCommonGrids.inc"
+#include "Satelite_Phone\BaseControls.hpp"
+#include "Satelite_Phone\RscDisplayName.hpp"
+#include "Functions\OTAS_Library.hpp"
+//====================================================================================================================//
+//====================================================================================================================//
+
+
+author			= "author";
+onLoadName		= "mission name";
+onLoadMission	= "some mission";
+loadScreen		= "Images\cover_place_holder.jpg";
+overviewPicture = "Images\cover_place_holder.jpg";
+overviewText    = "some briefing";
+
+respawn = 1;
+ShowGPS = 0;
+saving = 0;
+DisabledAI = 0;
+respawnOnStart = -1;
+joinUnassigned = 1;
+
+class Header
+{
+	gameType =  Coop;	
+	minPlayers =  1;	
+	maxPlayers = 12;	
+};
+
+class CfgMusic
+{
+	tracks[] = { "Music_1" };
+	class Music_1
+	{
+		name	= "Music_1";
+		sound[]	= { "Music\music_place_holder.ogg", db + 15, 1.0 };
+	};
+};
+
+class CfgSounds
+{
+	sounds[] = { Sound_1};
+	
+	class Sound_1
+	{
+		name = "Sound_1";
+		sound[] = { "Music\sound_place_holder.ogg", 1, 1, 70 };	
+		titles[] = { 1, "" };
+	};
+};
+
+class CfgWorlds
+{
+	class Any
+	{
+		author = "author";
+		description = "map description";
+		pictureMap = "Images\mapBG_place_holder.jpg"; 
+		pictureShot = "Images\mapBG_place_holder.jpg";
+		loadingTexts[] = { "some text" };
+	};
+};
+
+

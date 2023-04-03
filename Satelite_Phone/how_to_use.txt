@@ -1,0 +1,8 @@
+just put the code bellow on "initPlayerLocal.sqf"
+
+execVM "Satelite_Phone\Scripts\check_item.sqf";
+
+Also put the code Bellow on "initServer.Sqf"
+
+execVM "Satelite_Phone\Scripts\initSP.sqf"; 
+
